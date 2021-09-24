@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NsaMobileApp.Views.AboutPage"
+             Title="{Binding Title}">
+
+    <Grid>
+        
+    <StackLayout BackgroundColor="#15c8a0">
+        <Label
+            Text="Contact" FontSize="30" FontAttributes="Bold" Margin="20" TextColor="White"/>
+    </StackLayout>
+
+    <StackLayout>
+        <Label
+            Text="Contact Us" FontSize="15" FontAttributes="Bold" Margin="20" TextColor="#15c8a0"/>
+    </StackLayout>
+        
+    </Grid>
+
+ 
+
+
+
+
+</ContentPage>
