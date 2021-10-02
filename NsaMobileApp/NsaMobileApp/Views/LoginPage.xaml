@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:LoginPageSpeedUI.CustomRenderer" xmlns:local1="clr-namespace:NsaMobileApp.CustomRenderer"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:local1="clr-namespace:NsaMobileApp.CustomRenderer"
              mc:Ignorable="d"
              x:Class="NsaMobileApp.Views.LoginPage"
              Shell.NavBarIsVisible="False">
