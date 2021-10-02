@@ -5,7 +5,7 @@
              Title="{Binding Title}">
 
     <Grid BackgroundColor="#15c8a0">
-        
+
         <StackLayout>
             <Label
             Text="Contact Us" FontSize="Header" FontAttributes="Bold" Margin="10,10" TextColor="White"/>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NsaMobileApp.Views.HomePage">
+    <ScrollView WidthRequest="4000" HeightRequest="3600">
+
+        <StackLayout>
+            <Image Source="d1.jpg" WidthRequest="600" HeightRequest="200" />
+            <Button Text="Donate" FontSize="Large" FontAttributes="Bold" />
+
+            <Label Text=" Causes" VerticalOptions="Center" FontSize="30" FontFamily="Abadi" />
+
+            <Image Source="d2.jpg" WidthRequest="600" HeightRequest="200" />
+
+            <Label Text=" Winter Clothing" VerticalOptions="End" />
+            <Image Source="d3.jpg" WidthRequest="600" HeightRequest="200" />
+            <Label Text=" Food Parcels" VerticalOptions="End" />
+
+            <Label Text="Posts" VerticalOptions="Center" FontSize="30" FontFamily="Abadi" />
+            <BoxView WidthRequest="600" HeightRequest="200" Color="AliceBlue"/>
+            <BoxView WidthRequest="600" HeightRequest="200" Color="NavajoWhite"/>
+            <Label Text="Testimonials" VerticalOptions="Center" FontSize="30" FontFamily="Abadi" />
+            <Label Text="Keep up the great work" VerticalOptions="Center" FontSize="15" FontFamily="Abadi" />
+            <Label Text="Blog" VerticalOptions="Center" FontSize="30" FontFamily="Abadi" />
+            <BoxView WidthRequest="600" HeightRequest="200" Color="NavajoWhite"/>
+            <Label Text="Blog Name" VerticalOptions="Center" FontSize="15" FontFamily="Abadi" />
+            <Label Text="Newsletters" VerticalOptions="Center" FontSize="30" FontFamily="Abadi" />
+            <SearchBar Placeholder="Search Items..." />
+            <Button Text="Search" />
+
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>
