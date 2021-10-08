@@ -5,37 +5,49 @@
              Title="{Binding Title}">
 
     <Grid BackgroundColor="#15c8a0">
-
-        <StackLayout>
+        
+        <Grid>
+            <StackLayout BackgroundColor="NavajoWhite">
             <Label
             Text="Contact Us" FontSize="Header" FontAttributes="Bold" Margin="10,10" TextColor="White"/>
         </StackLayout>
+        </Grid>
 
+        <Grid  BackgroundColor="NavajoWhite">
         <StackLayout Margin="20,10">
             <Label
             Text="We'd Love To Hear From You" FontSize="Subtitle" FontAttributes="Bold" Margin="20,120" TextColor="White"/>
         </StackLayout>
+        </Grid>
 
-        <StackLayout Margin="30,100">
+        <Grid  BackgroundColor="NavajoWhite">
+            <StackLayout Margin="30,100">
             <Label
             Text="Call Us At: " FontSize="25" FontAttributes="Bold" Margin="20,120" TextColor="White"/>
         </StackLayout>
+        </Grid>
 
+        <Grid BackgroundColor="NavajoWhite">
         <StackLayout Margin="30,130">
             <Label
             Text="011 123 4567 " FontSize="25" FontAttributes="Bold" Margin="15,120" TextColor="White"/>
         </StackLayout>
+        </Grid>
 
+        <Grid BackgroundColor="NavajoWhite">
         <StackLayout Margin="30,180">
             <Label
             Text="Email Us At: " FontSize="25" FontAttributes="Bold" Margin="20,120" TextColor="White"/>
         </StackLayout>
+        </Grid>
 
+        <Grid BackgroundColor="NavajoWhite">
         <StackLayout Margin="30,310">
             <Label
             Text="NsaFoundation@gmail.com" FontSize="25" FontAttributes="Bold" Margin="15" TextColor="White"/>
         </StackLayout>
-
+        </Grid>
+        
     </Grid>
 
 </ContentPage>
