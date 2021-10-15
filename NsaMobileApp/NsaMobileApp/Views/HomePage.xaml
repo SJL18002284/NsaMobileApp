@@ -6,27 +6,27 @@
 
         <StackLayout>
             <Image Source="d1.jpg" WidthRequest="600" HeightRequest="200" />
-            <Button Text="Donate" FontSize="Large" FontAttributes="Bold" />
+            <Button Text="Donate" FontSize="Large" FontAttributes="Bold" TextColor="Black" />
 
-            <Label Text=" Causes" VerticalOptions="Center" FontSize="30" FontFamily="Abadi" />
+            <Label Text=" Causes" VerticalOptions="Center" FontSize="30" FontFamily="Abadi" TextColor="Black" />
 
             <Image Source="d2.jpg" WidthRequest="600" HeightRequest="200" />
 
-            <Label Text=" Winter Clothing" VerticalOptions="End" />
+            <Label Text=" Winter Clothing" VerticalOptions="End" TextColor="Black"/>
             <Image Source="d3.jpg" WidthRequest="600" HeightRequest="200" />
-            <Label Text=" Food Parcels" VerticalOptions="End" />
+            <Label Text=" Food Parcels" VerticalOptions="End" TextColor="Black"/>
 
-            <Label Text="Posts" VerticalOptions="Center" FontSize="30" FontFamily="Abadi" />
+            <Label Text="Posts" VerticalOptions="Center" FontSize="30" FontFamily="Abadi" TextColor="Black"/>
             <BoxView WidthRequest="600" HeightRequest="200" Color="AliceBlue"/>
             <BoxView WidthRequest="600" HeightRequest="200" Color="NavajoWhite"/>
-            <Label Text="Testimonials" VerticalOptions="Center" FontSize="30" FontFamily="Abadi" />
-            <Label Text="Keep up the great work" VerticalOptions="Center" FontSize="15" FontFamily="Abadi" />
-            <Label Text="Blog" VerticalOptions="Center" FontSize="30" FontFamily="Abadi" />
+            <Label Text="Testimonials" VerticalOptions="Center" FontSize="30" FontFamily="Abadi" TextColor="Black"/>
+            <Label Text="Keep up the great work" VerticalOptions="Center" FontSize="15" FontFamily="Abadi" TextColor="Black"/>
+            <Label Text="Blog" VerticalOptions="Center" FontSize="30" FontFamily="Abadi" TextColor="Black"/>
             <BoxView WidthRequest="600" HeightRequest="200" Color="NavajoWhite"/>
-            <Label Text="Blog Name" VerticalOptions="Center" FontSize="15" FontFamily="Abadi" />
-            <Label Text="Newsletters" VerticalOptions="Center" FontSize="30" FontFamily="Abadi" />
-            <SearchBar Placeholder="Search Items..." />
-            <Button Text="Search" />
+            <Label Text="Blog Name" VerticalOptions="Center" FontSize="15" FontFamily="Abadi" TextColor="Black" />
+            <Label Text="Newsletters" VerticalOptions="Center" FontSize="30" FontFamily="Abadi" TextColor="Black"/>
+            <SearchBar Placeholder="Search Items..." TextColor="Black"/>
+            <Button Text="Search" TextColor="Black"/>
 
         </StackLayout>
 

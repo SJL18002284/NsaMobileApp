@@ -157,4 +157,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\DonateButton.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\nsa_logo.jpeg" />
+  </ItemGroup>
 </Project>

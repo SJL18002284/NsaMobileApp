@@ -81,7 +81,7 @@
     <FlyoutItem Title="Home" Icon="icon_about.png">
         <ShellContent Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Contact" Icon="icon_contact.png">
+    <FlyoutItem Title="Contact" Icon="icon_about.png">
         <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Donate Page" Icon="icon_feed.png">
@@ -89,6 +89,9 @@
     </FlyoutItem>
     <FlyoutItem Title="Browse" Icon="icon_feed.png">
         <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Cause Request Form" Icon="icon_about.png">
+        <ShellContent Route="DonationRequestPage" ContentTemplate="{DataTemplate local:DonationRequestPage}" />
     </FlyoutItem>
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->

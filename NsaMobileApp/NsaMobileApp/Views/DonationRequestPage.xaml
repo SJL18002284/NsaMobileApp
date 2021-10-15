@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NsaMobileApp.Views.DonationRequestPage">
+    <ScrollView Orientation="Horizontal">
+        <StackLayout>
+
+            <Frame BackgroundColor="LightGray">
+
+                <Label Text="Donation Request Form"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       FontSize="40"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start" />
+
+            </Frame>
+
+            <Label Text="Request Now"
+                   TextColor="#15c8a0"
+                   FontSize="Title"
+                   HorizontalOptions="Center"/>
+
+            <StackLayout Padding="10" BackgroundColor="LightGray">
+
+                <Label Text="Date Created" Visual="Material" TextColor="#15c8a0" FontSize="25" BackgroundColor="White"/>
+
+                <DatePicker Visual="Material" TextColor="Black" BackgroundColor="White" FontSize="25"/>
+   
+            </StackLayout>
+
+            <StackLayout Padding="10" BackgroundColor="LightGray">
+
+                <Entry Placeholder="Enter Cause Name" PlaceholderColor="#15c8a0" TextColor="Black" Visual="Material" BackgroundColor="White" FontSize="25"/>
+
+            </StackLayout>
+
+            <StackLayout Padding="10" BackgroundColor="LightGray">
+
+                <Entry Placeholder="Enter Organizer Name" PlaceholderColor="#15c8a0" TextColor="Black" Visual="Material" BackgroundColor="White" FontSize="25"/>
+
+            </StackLayout>
+
+            <StackLayout Padding="10" BackgroundColor="LightGray">
+
+                <Editor Placeholder="Enter Request Details" PlaceholderColor="#15c8a0" TextColor="Black" Visual="Material" AutoSize="TextChanges" BackgroundColor="White" FontSize="25"/>
+
+            </StackLayout>
+
+            <StackLayout Padding="10" BackgroundColor="LightGray">
+
+                <Entry Placeholder="Enter Organizer Email" PlaceholderColor="#15c8a0" TextColor="Black" Visual="Material" BackgroundColor="White" FontSize="25"/>
+
+            </StackLayout>
+
+            <StackLayout Padding="10" BackgroundColor="LightGray">
+
+                <Entry Placeholder="Enter Organizer Cell No." PlaceholderColor="#15c8a0" TextColor="Black" Visual="Material" BackgroundColor="White" FontSize="25"/>
+
+            </StackLayout>
+
+            <Button Text="SUBMIT" />
+
+        </StackLayout>
+    </ScrollView>
+       
+</ContentPage>
