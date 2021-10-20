@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="NsaMobileApp.Views.DonationRequestPage">
-    <ScrollView Orientation="Horizontal">
-        <StackLayout>
+             x:Class="NsaMobileApp.Views.DonationRequestPage"
+             xmlns:behavior="clr-namespace:NsaMobileApp.Behaviors">
+    
+    <ScrollView Orientation="Vertical" Visual="Material" VerticalOptions="StartAndExpand" VerticalScrollBarVisibility="Always">
+        <StackLayout Margin="5">
 
             <Frame BackgroundColor="LightGray">
 
@@ -21,47 +23,96 @@
                    FontSize="Title"
                    HorizontalOptions="Center"/>
 
-            <StackLayout Padding="10" BackgroundColor="LightGray">
+            <StackLayout Padding="2" BackgroundColor="LightGray" Margin="20,20,20,2">
 
-                <Label Text="Date Created" Visual="Material" TextColor="#15c8a0" FontSize="25" BackgroundColor="White"/>
+                <Label Text="Date Created" 
+                       Visual="Material" 
+                       TextColor="#15c8a0" 
+                       FontSize="15" 
+                       BackgroundColor="White"/>
 
-                <DatePicker Visual="Material" TextColor="Black" BackgroundColor="White" FontSize="25"/>
-   
-            </StackLayout>
-
-            <StackLayout Padding="10" BackgroundColor="LightGray">
-
-                <Entry Placeholder="Enter Cause Name" PlaceholderColor="#15c8a0" TextColor="Black" Visual="Material" BackgroundColor="White" FontSize="25"/>
-
-            </StackLayout>
-
-            <StackLayout Padding="10" BackgroundColor="LightGray">
-
-                <Entry Placeholder="Enter Organizer Name" PlaceholderColor="#15c8a0" TextColor="Black" Visual="Material" BackgroundColor="White" FontSize="25"/>
+                <DatePicker x:Name="Date"
+                            Visual="Material" 
+                            TextColor="Black" 
+                            BackgroundColor="White" 
+                            FontSize="25"/>
 
             </StackLayout>
 
-            <StackLayout Padding="10" BackgroundColor="LightGray">
+            <StackLayout Padding="2" BackgroundColor="LightGray" Margin="20,0,20,2">
 
-                <Editor Placeholder="Enter Request Details" PlaceholderColor="#15c8a0" TextColor="Black" Visual="Material" AutoSize="TextChanges" BackgroundColor="White" FontSize="25"/>
-
-            </StackLayout>
-
-            <StackLayout Padding="10" BackgroundColor="LightGray">
-
-                <Entry Placeholder="Enter Organizer Email" PlaceholderColor="#15c8a0" TextColor="Black" Visual="Material" BackgroundColor="White" FontSize="25"/>
-
-            </StackLayout>
-
-            <StackLayout Padding="10" BackgroundColor="LightGray">
-
-                <Entry Placeholder="Enter Organizer Cell No." PlaceholderColor="#15c8a0" TextColor="Black" Visual="Material" BackgroundColor="White" FontSize="25"/>
+                <Entry x:Name="CauseName"
+                       Placeholder="Enter Cause Name" 
+                       PlaceholderColor="#15c8a0" 
+                       TextColor="Black" 
+                       Visual="Material" 
+                       BackgroundColor="White" 
+                       FontSize="25"/>
 
             </StackLayout>
 
-            <Button Text="SUBMIT" />
+            <StackLayout Padding="2" BackgroundColor="LightGray" Margin="20,0,20,2">
+
+                <Entry x:Name="OrganizerName"
+                       Placeholder="Enter Organizer Name" 
+                       PlaceholderColor="#15c8a0" 
+                       TextColor="Black" Visual="Material"
+                       BackgroundColor="White" 
+                       FontSize="25"/>
+
+            </StackLayout>
+
+            <StackLayout Padding="2" BackgroundColor="LightGray" Margin="20,0,20,2">
+
+                <Editor x:Name="Details"
+                        Placeholder="Enter Request Details" 
+                        PlaceholderColor="#15c8a0" 
+                        TextColor="Black" 
+                        Visual="Material" 
+                        AutoSize="TextChanges" 
+                        BackgroundColor="White" 
+                        FontSize="25"
+                        IsTextPredictionEnabled="True"
+                        IsSpellCheckEnabled="True"/>
+
+            </StackLayout>
+
+            <StackLayout Padding="2" BackgroundColor="LightGray" Margin="20,0,20,2">
+
+                <Entry x:Name="Email" 
+                       Placeholder="Enter Organizer Email" 
+                       PlaceholderColor="#15c8a0" 
+                       TextColor="Black" 
+                       Visual="Material" 
+                       BackgroundColor="White" 
+                       FontSize="25"
+                       Keyboard="Email">
+                    <Entry.Behaviors>
+                        <behavior:EmailValidationBehavior/>
+                    </Entry.Behaviors>
+                </Entry>
+
+            </StackLayout>
+
+            <StackLayout Padding="2" BackgroundColor="LightGray" Margin="20,0,20,2">
+
+                <Entry x:Name="ContactNo"
+                       Placeholder="Enter Organizer Cell No." 
+                       PlaceholderColor="#15c8a0" 
+                       TextColor="Black" 
+                       Visual="Material" 
+                       BackgroundColor="White" 
+                       FontSize="25"
+                       Keyboard="Telephone"/>
+
+            </StackLayout>
+
+            <StackLayout Margin="20">
+                <Button Text="SUBMIT" FontSize="Subtitle" WidthRequest="100" HeightRequest="50"/>
+            </StackLayout>
 
         </StackLayout>
+        
     </ScrollView>
        
 </ContentPage>
