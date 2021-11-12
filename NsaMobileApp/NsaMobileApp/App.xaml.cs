@@ -1,5 +1,4 @@
-﻿using NsaMobileApp.Services;
-using NsaMobileApp.Views;
+﻿using NsaMobileApp.Views;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -12,8 +11,6 @@ namespace NsaMobileApp
         public App()
         {
             InitializeComponent();
-
-            DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
         }
 

@@ -9,7 +9,6 @@ namespace NsaMobileApp.Models
     {
         
         //variables of the request
-        
         public int requestID { get; set; }
 
         //[Required(ErrorMessage = "Request Date cannot be empty")]
@@ -25,20 +24,22 @@ namespace NsaMobileApp.Models
         public string organizerEmail { get; set; }
         
         //[Required(ErrorMessage = "Organizer ContactNo cannot be empty")]
-        public int organizerContactNo { get; set; }
+        public string organizerContactNo { get; set; }
         
         //[Required(ErrorMessage = "Request Details cannot be empty")]
         public string requestDetails { get; set; }
 
-        //empty constructor
+        public string userID { get; set; }
 
+
+        //empty constructor
         public DonationRequestModel()
         {
 
         }
 
         //constructor accepting parameters
-        public DonationRequestModel(int requestID, string requestDate, string causeName, string organizerName, string organizerEmail, int organizerContactNo, string requestDetails)
+        public DonationRequestModel(int requestID, string requestDate, string causeName, string organizerName, string organizerEmail, string organizerContactNo, string requestDetails, string userID)
         {
             this.requestID = requestID;
             this.requestDate = requestDate;
@@ -47,11 +48,13 @@ namespace NsaMobileApp.Models
             this.organizerEmail = organizerEmail;
             this.organizerContactNo = organizerContactNo;
             this.requestDetails = requestDetails;
+            this.userID = userID;
         }
 
         //constructor without ID
-        public DonationRequestModel(string requestDate, string causeName, string organizerName, string organizerEmail, int organizerContactNo, string requestDetails)
+        public DonationRequestModel(string requestDate, string causeName, string organizerName, string organizerEmail, string organizerContactNo, string requestDetails)
         {
+            
             this.requestDate = requestDate;
             this.causeName = causeName;
             this.organizerName = organizerName;

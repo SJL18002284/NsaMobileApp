@@ -3,15 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:local1="clr-namespace:NsaMobileApp.CustomRenderer"
+             xmlns:local="clr-namespace:NsaMobileApp.CustomRenderer"
              mc:Ignorable="d"
              x:Class="NsaMobileApp.Views.LoginPage"
              Shell.NavBarIsVisible="False">
-    
+
     <StackLayout BackgroundColor="#e6e6e6">
         <Grid>
             <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
-                <Frame HeightRequest="150" BackgroundColor="#15c8a0" Padding="0" Margin="0">
+                <Frame HeightRequest="150" BackgroundColor="HotPink" Padding="0" Margin="0">
                     <Image Source="https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg" Aspect="AspectFill" Margin="0"/>
                 </Frame>
             </StackLayout>
@@ -33,7 +33,7 @@
                                         <Image Source="https://www.findool.com/images/avatars/avatar.png" Aspect="AspectFill" Margin="0"/>
                                     </Frame>
 
-                                    <local1:CustomEntry Placeholder="Email" TextColor="HotPink" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                                    <local:CustomEntry x:Name="txtEmail" Placeholder="Email" TextColor="HotPink" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
                                 </StackLayout>
                             </Frame>
 
@@ -43,23 +43,23 @@
                                         <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
                                     </Frame>
 
-                                    <local1:CustomEntry Placeholder="Password" IsPassword="True" TextColor="HotPink" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                                    <local:CustomEntry x:Name="txtPassword" Placeholder="Password" IsPassword="True" TextColor="HotPink" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
                                 </StackLayout>
                             </Frame>
 
                             <StackLayout  Orientation="Horizontal">
-                                <CheckBox IsChecked="False" Color="#15c8a0" />
+                                <CheckBox IsChecked="False" Color="HotPink" />
                                 <Label Text="Remember me" TextColor="DarkGray" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
 
-                                <Label Text="Forgot Password" TextColor="#15c8a0" FontAttributes="Bold" HorizontalOptions="EndAndExpand" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+                                <Label Text="Forgot Password" TextColor="HotPink" FontAttributes="Bold" HorizontalOptions="EndAndExpand" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
 
 
                             </StackLayout>
 
-                            <Button Text="SIGN IN" BackgroundColor="#15c8a0" TextColor="White" CornerRadius="30" Command="{Binding LoginCommand}"/>
+                            <Button x:Name="btnSignIn"  Clicked="btnRegister_Clicked" Text="SIGN IN" BackgroundColor="HotPink" TextColor="White" CornerRadius="30" />
                             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
                                 <Label Text="Still Not Connected ?" TextColor="DarkGray" FontSize="Small"/>
-                                <Label Text="Sign Up" TextColor="#15c8a0" FontAttributes="Bold" FontSize="Small"/>
+                                <Label Text="Sign Up" TextColor="HotPink" FontAttributes="Bold" FontSize="Small"/>
                             </StackLayout>
 
                             <StackLayout Margin="0,25,0,0" Padding="0">

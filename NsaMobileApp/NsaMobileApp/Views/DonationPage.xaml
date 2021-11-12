@@ -1,20 +1,76 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="NsaMobileApp.Views.DonationPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to The Donation Page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+             x:Class="NsaMobileApp.Views.DonationPage"
+             xmlns:behavior="clr-namespace:NsaMobileApp.Behaviors">
+    <ScrollView Orientation="Vertical" Visual="Material" VerticalOptions="StartAndExpand" VerticalScrollBarVisibility="Always">
+        <StackLayout Margin="0">
 
-            <Grid>
-                <StackLayout>
+            <Frame BackgroundColor="#15c8a0">
 
-                </StackLayout>
-            </Grid>
-            
+                <Label Text="Donation Form"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       FontSize="40"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            </Frame>
+
+            <Label Text="Donate Now"
+                   TextColor="#15c8a0"
+                   FontSize="Title"
+                   HorizontalOptions="Center"/>
+
+            <StackLayout Padding="2" BackgroundColor="LightGray" Margin="20,20,20,2">
+
+                <Label Text="Date Created" 
+                       Visual="Material" 
+                       TextColor="#15c8a0" 
+                       FontSize="15" 
+                       BackgroundColor="White"/>
+
+                <DatePicker x:Name="Date"
+                            Visual="Material" 
+                            TextColor="Black" 
+                            BackgroundColor="White" 
+                            FontSize="25"/>
+
+            </StackLayout>
+
+            <StackLayout Padding="2" BackgroundColor="LightGray" Margin="20,0,20,2">
+
+                <Entry x:Name="CauseName"
+                       Placeholder="Enter Cause Name" 
+                       PlaceholderColor="#15c8a0" 
+                       TextColor="Black" 
+                       Visual="Material" 
+                       BackgroundColor="White" 
+                       FontSize="25"/>
+
+            </StackLayout>
+
+            <StackLayout Padding="2" BackgroundColor="LightGray" Margin="20,0,20,2">
+
+                <Editor x:Name="Details"
+                        Placeholder="Enter Donation Details" 
+                        PlaceholderColor="#15c8a0" 
+                        TextColor="Black" 
+                        Visual="Material" 
+                        AutoSize="TextChanges" 
+                        BackgroundColor="White" 
+                        FontSize="25"
+                        IsTextPredictionEnabled="True"
+                        IsSpellCheckEnabled="True"/>
+
+            </StackLayout>
+
+            <StackLayout Margin="20">
+                <Button Text="SUBMIT" FontSize="Subtitle" WidthRequest="100" HeightRequest="50"/>
+            </StackLayout>
+
         </StackLayout>
-     
-    </ContentPage.Content>
+
+    </ScrollView>
+
 </ContentPage>

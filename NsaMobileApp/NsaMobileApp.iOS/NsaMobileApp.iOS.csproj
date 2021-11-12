@@ -158,6 +158,36 @@
     <BundleResource Include="Resources\DonateButton.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\nsa_logo.jpeg" />
+    <BundleResource Include="Resources\planner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\calling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\contact %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\contact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\gallery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\home %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\information %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\nsa_logo.png" />
   </ItemGroup>
 </Project>
