@@ -28,7 +28,7 @@
             
             <Label Text="Call Us Any Time " FontSize="20" FontAttributes="Bold" TextColor="Black" Visual="Material"  HorizontalOptions="Center" Margin="0,-70,10,0"/>
 
-            <Label x:Name="Number" Text="071 114 4572 " FontSize="30" FontAttributes="Bold" TextColor="#15c8a0" Visual="Material" HorizontalOptions="Center" Margin="0,0,20,0" Clicked="btnCall_Click"/>
+            <Button x:Name="Number" Text="071 114 4572 " FontSize="30" FontAttributes="Bold" TextColor="#15c8a0" Visual="Material" HorizontalOptions="Center" Margin="0,0,20,0" Clicked="btnCall_Click"/>
         </StackLayout>
 
 
