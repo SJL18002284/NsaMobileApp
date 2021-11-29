@@ -13,43 +13,26 @@ namespace NsaMobileApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DonationRequestPage : ContentPage
     {
-        
-
-        //initializing the db
-        //FirestoreDb db = FirestoreDb.Create("NsaDb");
-
-        //Document reference 
-        //DocumentReference doc;
+        FirebaseHelper firebaseHelper = new FirebaseHelper();
 
         public DonationRequestPage()
         {
             InitializeComponent();
         }
 
-    //    private void createDonation()
-    //    {
-    //        //model
-    //        DonationRequestModel model = new DonationRequestModel();
+        private async void BtnAdd_Clicked(object sender, EventArgs e)
+        {
+            await firebaseHelper.AddVolunteer(Email.Text.ToString(),
+                                              FullName.Text.ToString(),
+                                              ContactNo.Text.ToString());
+            FullName.Text = string.Empty;
+            Email.Text = string.Empty;
+            ContactNo.Text = string.Empty;
+           
+            await DisplayAlert("Success", "Volunteer Application Successfully Processed", "OK");
+            //var allPersons = await firebaseHelper.GetAllPersons();
+            //lstPersons.ItemsSource = allPersons;
+        }
 
-    //        //list
-    //        List<DonationRequestModel> list = new List<DonationRequestModel>();
-
-    //        //variables to hold user input
-    //        string create_Date = Date.Date.ToString();
-    //        string cause_Name = CauseName.Text;
-    //        string org_Name = OrganizerName.Text;
-    //        string req_Dets = Details.Text;
-    //        string org_email = Email.Text;
-    //        string org_Num = ContactNo.Text;
-
-    //        //Collection that will be used
-    //        doc = db.Collection("DonationRequestsTbl").Document(cause_Name);
-
-    //        //adding the inputs to the list
-    //        list.Add(new DonationRequestModel(create_Date, cause_Name, org_Name, req_Dets, org_email, org_Num));
-
-    //        doc.SetAsync(list);
-    //        DisplayAlert("Alert", "Request Successfully Created", "OK");
-    //    }
     }
 }

@@ -40,13 +40,42 @@
 
             <StackLayout Padding="2" BackgroundColor="LightGray" Margin="20,0,20,2">
 
-                <Entry x:Name="CauseName"
-                       Placeholder="Enter Cause Name" 
+                <Entry x:Name="FullName"
+                       Placeholder="Enter Full Name" 
+                       PlaceholderColor="#15c8a0" 
+                       TextColor="Black" Visual="Material"
+                       BackgroundColor="White" 
+                       FontSize="25"/>
+
+            </StackLayout>
+
+            <StackLayout Padding="2" BackgroundColor="LightGray" Margin="20,0,20,2">
+
+                <Entry x:Name="Email" 
+                       Placeholder="Enter Email" 
                        PlaceholderColor="#15c8a0" 
                        TextColor="Black" 
                        Visual="Material" 
                        BackgroundColor="White" 
-                       FontSize="25"/>
+                       FontSize="25"
+                       Keyboard="Email">
+                    <Entry.Behaviors>
+                        <behavior:EmailValidationBehavior/>
+                    </Entry.Behaviors>
+                </Entry>
+
+            </StackLayout>
+
+            <StackLayout Padding="2" BackgroundColor="LightGray" Margin="20,0,20,2">
+
+                <Entry x:Name="ContactNo"
+                       Placeholder="Enter Cell No." 
+                       PlaceholderColor="#15c8a0" 
+                       TextColor="Black" 
+                       Visual="Material" 
+                       BackgroundColor="White" 
+                       FontSize="25"
+                       Keyboard="Telephone"/>
 
             </StackLayout>
 
@@ -66,7 +95,7 @@
             </StackLayout>
 
             <StackLayout Margin="20">
-                <Button Text="SUBMIT" FontSize="Subtitle" WidthRequest="100" HeightRequest="50"/>
+                <Button Text="SUBMIT" FontSize="Subtitle" WidthRequest="100" HeightRequest="50" Clicked="BtnAdd_Clicked"/>
             </StackLayout>
 
         </StackLayout>

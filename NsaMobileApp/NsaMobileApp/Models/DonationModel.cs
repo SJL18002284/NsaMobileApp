@@ -4,7 +4,7 @@ using System.Text;
 
 namespace NsaMobileApp.Models
 {
-    class DonationModel
+    public class DonationModel
     {
         public int donationID { get; set; }
 

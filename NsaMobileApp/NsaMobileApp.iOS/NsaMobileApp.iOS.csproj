@@ -190,4 +190,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\nsa_logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\welcome_one_heart_icon.png" />
+  </ItemGroup>
 </Project>

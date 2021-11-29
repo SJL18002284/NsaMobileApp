@@ -22045,7 +22045,10 @@ namespace NsaMobileApp.Droid
 			public const int tooltip_frame_light = 2131165346;
 			
 			// aapt resource value: 0x7F0700A3
-			public const int xamarin_logo = 2131165347;
+			public const int welcome_one_heart_icon = 2131165347;
+			
+			// aapt resource value: 0x7F0700A4
+			public const int xamarin_logo = 2131165348;
 			
 			static Drawable()
 			{

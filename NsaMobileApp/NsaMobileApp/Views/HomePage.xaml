@@ -6,27 +6,80 @@
 
         <StackLayout>
             <Image Source="d1.jpg" WidthRequest="600" HeightRequest="200" />
-            <Button Text="Donate" FontSize="Large" FontAttributes="Bold" TextColor="Black" />
+            <!--<Button Text="Donate" FontSize="Large" FontAttributes="Bold" TextColor="Black" />
 
             <Label Text=" Causes" VerticalOptions="Center" FontSize="30" FontFamily="Abadi" TextColor="Black" />
 
             <Image Source="d2.jpg" WidthRequest="600" HeightRequest="200" />
 
-            <Label Text=" Winter Clothing" VerticalOptions="End" TextColor="Black"/>
-            <Image Source="d3.jpg" WidthRequest="600" HeightRequest="200" />
-            <Label Text=" Food Parcels" VerticalOptions="End" TextColor="Black"/>
+            
+            <Image Source="d3.jpg" WidthRequest="600" HeightRequest="200" />-->
+
+            
+            <Label Text="Causes" VerticalOptions="End" TextColor="Black" FontSize="Header"/>
+            <Button Text="Donate" TextColor="Black" BackgroundColor="#15c8a0" Margin="5" WidthRequest="80" HeightRequest="50" Clicked="NavigateButton_OnClicked"/>
+
+            <CollectionView x:Name="lstRequests" Margin="10">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10" Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Frame BackgroundColor="Gray" Grid.RowSpan="2" CornerRadius="5" Padding="10">
+                                <Image    
+                       Source="welcome_one_heart_icon.png"    
+                       Aspect="AspectFit"    
+                       HeightRequest="100"    
+                       WidthRequest="100" />
+                            </Frame>
+                            <Label Grid.Column="1" Margin="0,-10,0,0"   
+                       Text= "{Binding requestCategory}"    
+                       FontAttributes="Bold" TextColor="#15c8a0" FontSize="30"/>
+                            <Label Margin="0,20,0,0" Grid.Column="1"    
+                       Text="{Binding causeName}"    
+                       FontAttributes="Bold" TextColor="Black" FontSize="30"/>
+                            <Label Grid.Row="1"    
+                       Grid.Column="1"    
+                       Text="{Binding requestDetails}"    
+                       VerticalOptions="End" TextColor="Black" FontSize="30"/>
+
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+
+            
+
+            <!--<Label Text="{Binding causeName}" VerticalOptions="End" TextColor="Black"/>
+            <ListView x:Name="lstRequests" BackgroundColor="#15c8a0">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <TextCell Text="{Binding requestCategory}"></TextCell>
+                        </DataTemplate>
+
+                </ListView.ItemTemplate>
+            </ListView>
 
             <Label Text="Posts" VerticalOptions="Center" FontSize="30" FontFamily="Abadi" TextColor="Black"/>
             <BoxView WidthRequest="600" HeightRequest="200" Color="AliceBlue"/>
-            <BoxView WidthRequest="600" HeightRequest="200" Color="NavajoWhite"/>
-            <Label Text="Testimonials" VerticalOptions="Center" FontSize="30" FontFamily="Abadi" TextColor="Black"/>
+            <BoxView WidthRequest="600" HeightRequest="200" Color="NavajoWhite"/>-->
+            <!--<Label Text="Testimonials" VerticalOptions="Center" FontSize="30" FontFamily="Abadi" TextColor="Black"/>
             <Label Text="Keep up the great work" VerticalOptions="Center" FontSize="15" FontFamily="Abadi" TextColor="Black"/>
             <Label Text="Blog" VerticalOptions="Center" FontSize="30" FontFamily="Abadi" TextColor="Black"/>
             <BoxView WidthRequest="600" HeightRequest="200" Color="NavajoWhite"/>
             <Label Text="Blog Name" VerticalOptions="Center" FontSize="15" FontFamily="Abadi" TextColor="Black" />
             <Label Text="Newsletters" VerticalOptions="Center" FontSize="30" FontFamily="Abadi" TextColor="Black"/>
             <SearchBar Placeholder="Search Items..." TextColor="Black"/>
-            <Button Text="Search" TextColor="Black"/>
+            <Button Text="Search" TextColor="Black"/>-->
 
         </StackLayout>
 

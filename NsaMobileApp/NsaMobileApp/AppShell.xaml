@@ -87,7 +87,7 @@
     <FlyoutItem Title="Donate Page" Icon="icon_feed.png">
         <ShellContent Route="DonationPage" ContentTemplate="{DataTemplate local:DonationPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Donation Request Form" Icon="icon_about.png">
+    <FlyoutItem Title="Volunteer Form" Icon="icon_about.png">
         <ShellContent Route="DonationRequestPage" ContentTemplate="{DataTemplate local:DonationRequestPage}" />
     </FlyoutItem>
 
